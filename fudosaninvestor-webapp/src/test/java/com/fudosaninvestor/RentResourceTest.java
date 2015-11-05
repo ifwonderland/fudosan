@@ -2,6 +2,7 @@ package com.fudosaninvestor;
 
 import javax.ws.rs.core.Application;
 
+import com.fudosaninvestor.api.RentResource;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.test.JerseyTest;
 
@@ -20,8 +21,8 @@ public class RentResourceTest extends JerseyTest {
      */
     @Test
     public void testGetIt() {
-        final String responseMsg = target().path("myresource").request().get(String.class);
+        final String responseMsg = target().path("rent").request().get(String.class);
 
-        assertEquals("Hello, Heroku!", responseMsg);
+        assertEquals("Hello, fudosan investor!", responseMsg);
     }
 }

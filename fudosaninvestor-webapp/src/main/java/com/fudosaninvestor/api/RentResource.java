@@ -1,4 +1,4 @@
-package com.fudosaninvestor;
+package com.fudosaninvestor.api;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -6,9 +6,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
- * Root resource (exposed at "myresource" path)
+ * Rent stats related APIs
  */
-@Path("myresource")
+@Path("rent")
 public class RentResource {
 
     /**
@@ -20,6 +20,6 @@ public class RentResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-        return "Hello, Heroku!";
+        return "Hello, fudosan investor!";
     }
 }
