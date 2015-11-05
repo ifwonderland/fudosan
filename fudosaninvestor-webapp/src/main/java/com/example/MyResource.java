@@ -1,4 +1,4 @@
-package com.fudosaninvestor;
+package com.example;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -6,10 +6,10 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
- * Rent stats related APIs
+ * Root resource (exposed at "myresource" path)
  */
-@Path("rent")
-public class RentResource {
+@Path("myresource")
+public class MyResource {
 
     /**
      * Method handling HTTP GET requests. The returned object will be sent
@@ -20,6 +20,6 @@ public class RentResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-        return "Got it!";
+        return "Hello, Heroku!";
     }
 }
