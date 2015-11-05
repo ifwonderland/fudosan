@@ -1,4 +1,4 @@
-package com.example;
+package com.fudosaninvestor;
 
 import javax.ws.rs.core.Application;
 
@@ -8,13 +8,11 @@ import org.glassfish.jersey.test.JerseyTest;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-import com.example.MyResource;
-
-public class MyResourceTest extends JerseyTest {
+public class RentResourceTest extends JerseyTest {
 
     @Override
     protected Application configure() {
-        return new ResourceConfig(MyResource.class);
+        return new ResourceConfig(RentResource.class);
     }
 
     /**

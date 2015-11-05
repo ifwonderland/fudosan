@@ -1,4 +1,4 @@
-package com.example.heroku;
+package com.fudosaninvestor.api;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;
