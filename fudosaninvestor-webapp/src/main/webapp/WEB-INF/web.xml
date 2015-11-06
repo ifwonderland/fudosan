@@ -7,6 +7,6 @@
     <!-- Servlet declaration can be omitted in which case
          it would be automatically added by Jersey -->
     <servlet>
-        <servlet-name>com.fudosaninvestor.application.MainApplication</servlet-name>
+        <servlet-name>com.fudosaninvestor.app.MainApplication</servlet-name>
     </servlet>
 </web-app>

@@ -1,11 +1,11 @@
-package com.fudosaninvestor.application;
+package com.fudosaninvestor.app;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
 import javax.ws.rs.ApplicationPath;
 
 /**
- * Servlet 3.0 main application descriptor
+ * Servlet 3.0 main app descriptor
  * <p/>
  * Created by Shaochen Huang on 11/5/15.
  */
