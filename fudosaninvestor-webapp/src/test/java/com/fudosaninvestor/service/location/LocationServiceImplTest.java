@@ -1,6 +1,7 @@
 package com.fudosaninvestor.service.location;
 
 import com.fudosaninvestor.service.location.impl.LocationServiceImpl;
+import com.google.maps.model.GeocodingResult;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,7 +23,6 @@ public class LocationServiceImplTest {
     @Test
     public void testGetGeocoding() {
         //test empy address case
-
         try {
             locationService.getGeocoding("", "");
             Assert.fail();
@@ -44,6 +44,13 @@ public class LocationServiceImplTest {
             Assert.assertTrue(e instanceof NoMatchingAddressException);
         }
 
+        try {
+            GeocodingResult result = locationService.getGeocoding("88 bush st", "95126");
+            Assert.assertNotNull(result);
+            System.out.println(result.formattedAddress);
+        } catch (Exception e) {
+            Assert.fail(e.getMessage());
+        }
 
     }
 

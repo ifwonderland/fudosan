@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
  */
 public class LocationUtils {
 
-    private final static Pattern VALID_ZIP_PATTERN = Pattern.compile("/(^\\d{5}$)|(^\\d{5}-\\d{4}$)/");
+    private final static Pattern VALID_ZIP_PATTERN = Pattern.compile("^[0-9]{5}(?:-[0-9]{4})?$");
 
 
     public static boolean isValidZipCode(String zipCode) {

@@ -24,6 +24,4 @@ public class RentResource {
     private static final Gson GSON = new GsonBuilder().create();
 
 
-
-
 }
