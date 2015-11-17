@@ -1,12 +1,11 @@
 package com.fudosaninvestor;
 
+import com.fudosaninvestor.fudosan.api.RentResource;
 import javax.ws.rs.core.Application;
-
-import com.fudosaninvestor.api.RentResource;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.test.JerseyTest;
-
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 public class RentResourceTest extends JerseyTest {
